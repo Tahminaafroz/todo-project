@@ -1,0 +1,17 @@
+.header {
+  background-color: rgb(246, 207, 177);
+  width: 1440px;
+  height: 150px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-decoration: none;
+}

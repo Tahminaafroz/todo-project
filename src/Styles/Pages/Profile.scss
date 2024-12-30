@@ -1,0 +1,25 @@
+.profile-containers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+// h2 {
+//   color: rgb(50, 11, 224);
+//   font-weight: 700;
+//   font-size: 28px;
+//   gap: 3px;
+//   font-style: italic;
+
+// }
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  font-size: 0.7rem;
+}

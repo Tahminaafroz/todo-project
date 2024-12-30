@@ -1,0 +1,21 @@
+.alltodo-container {
+  position: absolute;
+  //background-color: rgb(238, 230, 230);
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.header-btn-items {
+  padding: 3px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+}
+button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  :hover {
+    background-color: rgb(253, 89, 13);
+  }
+}
