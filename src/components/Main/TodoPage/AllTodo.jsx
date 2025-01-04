@@ -1,23 +1,32 @@
 import { Button } from "react-bootstrap";
 import "../../../Styles/Pages/TodoPage.scss/AllTodo.scss";
-import { Link } from "react-router-dom";
 //import { FcTodoList } from "react-icons/fc";
-const AllTodo = () => {
+//import { MdAddTask, MdDateRange } from "react-icons/md";
+import "../../../Styles/Pages/TodoPage.scss/TaskBar.scss";
+//import { useState } from "react";
+
+//import { useNavigate } from "react-router-dom";
+//import ModalComp from "../../ui/ModalComp";
+
+// eslint-disable-next-line react/prop-types
+const AllTodo = ({ setTodosFilter }) => {
   return (
     <div className="alltodo-container">
-      <div className="alltodo-box">
-        <div className="header-btn-items">
-          <Link>
-            <Button variant="primary">Today</Button>
-            <Button variant="primary">Pending</Button>
-            <Button variant="primary">Overdue</Button>
-            <Button variant="primary">Completed</Button>
-          </Link>
-        </div>
-        {/* <div className="signin-btn">
-          <Button variant="primary">Sign in </Button>
-        </div> */}
+      <div className="tabs">
+        <Button variant="primary" onClick={() => setTodosFilter("today")}>
+          Today
+        </Button>
+        <Button variant="primary" onClick={() => setTodosFilter("pending")}>
+          Pending
+        </Button>
+        <Button variant="primary" onClick={() => setTodosFilter("overdue")}>
+          Overdue
+        </Button>
+        <Button variant="primary" onClick={() => setTodosFilter("completed")}>
+          Completed
+        </Button>
       </div>
+      {/* -------------------------------------------- */}
     </div>
   );
 };

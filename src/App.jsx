@@ -2,11 +2,11 @@ import { Route, Routes } from "react-router-dom";
 
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
-import Profile from "./Pages/Profile";
+//import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 //import ForgetPassword from "./Pages/ForgetPassword";
 import { useState } from "react";
-import PrivateRoute from "./components/PrivateRoute";
+//import PrivateRoute from "./components/PrivateRoute";
 import { createContext } from "react";
 import ForgetPassword from "./Pages/ForgetPassword";
 import ResetPassword from "./Pages/ResetPassword";
@@ -35,15 +35,15 @@ function App() {
             element={<ResetPassword></ResetPassword>}
           ></Route>
 
-          <Route
+          {/* <Route
             path="/profile"
-            element={<PrivateRoute element={<Profile />} />}
+            element={<PrivateRoute element={<Profile />} />} 
           >
-            {/* <Route
+           {/* <Route
             path="/forget-password"
             element={<ForgetPassword></ForgetPassword>}
-          ></Route> */}
-          </Route>
+          ></Route>
+          </Route> */}
         </Routes>
       </UserContext.Provider>
     </div>

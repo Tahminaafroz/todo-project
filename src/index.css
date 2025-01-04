@@ -35,6 +35,24 @@ body {
   border-radius: 5px 5px;
   font-weight: 500;
 }
+  ---------------------------------------------------------------
+
+.alltodo-container{
+  margin: 0 auto;
+  width: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.tabs {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+/* -------------------------------------------------------------------------- */
+
 .sidebar-cotainer {
   background-color: var(--sidebar);
   height: 100vh;
@@ -55,7 +73,7 @@ h1 {
 h3 {
   font-size: 20px;
   margin-top: 2px;
-} */
+}
 
 /* .slogan {
   font-size: 2rem;
@@ -154,8 +172,6 @@ h1 {
   color: rgb(15, 15, 15);
 }
 .text-center {
-  border-radius: 4.5px;
-  background-color: rgb(168, 168, 164);
-  height: 70%;
-  font-size: 2rem;
+  width
+  
 } */
