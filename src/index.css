@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+p {
+  margin-bottom: 0;
+}
 :root {
   --header: rgb(246, 207, 177);
   --sidebar: rgb(249, 232, 219);
@@ -16,81 +18,67 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+/* ----------------------------------------------------------------------------------- */
 
-/* .header-container {
-  background-color: var(--header);
+/* .header {
+  background-color: #432ff5;
+  color: white;
+  margin: auto;
+  width: 80%;
+  height: 40%;
+  padding: 90px 60px;
   font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+  padding: 40px;
   color: antiquewhite;
-  position: absolute;
-}
-.header-box {
-  margin: 0;
-  padding: 1rem;
-  font-size: 5rem;
-  border-radius: 5px 5px;
-  font-weight: 500;
-}
-  ---------------------------------------------------------------
-
-.alltodo-container{
-  margin: 0 auto;
-  width: 100%;
-   display: flex;
-  align-items: center;
-  justify-content: space-between; 
-}
-
-.tabs {
-  margin-top: 10px;
-  display: flex;
-  width: 100%;
-  gap: 10px;
-}
-/* -------------------------------------------------------------------------- */
-
-.sidebar-cotainer {
-  background-color: var(--sidebar);
-  height: 100vh;
-  width: 20%;
-  position: relative;
-}
-.sidebar-box {
-  padding-top: 1rem;
+  border-radius: 10px;
 }
 
 p {
   margin-bottom: 0 !important;
 }
-
-h1 {
-  font-size: 40px;
+.logoBox.logos {
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 3rem;
+  border-radius: 5px 5px;
+  font-weight: 500;
 }
-h3 {
-  font-size: 20px;
-  margin-top: 2px;
-}
 
-/* .slogan {
+.slogan {
   font-size: 2rem;
 }
 .Main {
   display: flex;
 }
 
-
-.todosof {
-  font-size: 5rem;
+.sideBar {
+  width: 70%;
+  height: 20px;
+  font-size: 1rem;
+  margin-left: 0 auto;
+  padding-left: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
+.sidebar-box {
+  padding-top: 1rem;
+}
+.todosof {
+  font-size: 1.5rem;
+}
 .todosOf_item {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .todosOf_item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
 }
 .todosof_items {
@@ -98,28 +86,37 @@ h3 {
   padding-top: 1rem;
 }
 .add-btn {
-  background-color: #52768b;
+  background-color: #7977f6;
   color: white;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  outline: none;
-  border: none;
+  justify-content: space-between;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 a:hover {
   background-color: rgb(114, 136, 99);
 }
 .todo-container {
-  font-size: 2rem;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
   color: black;
   cursor: pointer;
-}
+} */
 
-.todoBox {
+/* .table-container {
+  background-color: aqua;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* .todoBox {
   width: 70%;
   display: flex;
   align-items: center;
@@ -128,11 +125,10 @@ a:hover {
   margin-top: 25px;
   left: auto;
 }
-
 .Today,
-.NextSeven,
+.Pending,
 .AllTodos,
-.Status,
+.Overdue,
 .Completed,
 .Uncompleted,
 .TodoList {
@@ -143,22 +139,15 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 
-.Modal {
-  z-index: 5000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgb(31, 28, 28);
-  height: 100%;
-  width: 100%;
-}
-.todoBox-container {
-  position: relative;
-}
+/* .todoBox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
 
-.Modal.modal-container {
+/* .Modal.modal-container {
   background-color: blue;
   position: absolute;
   top: 25%;
@@ -168,10 +157,24 @@ a:hover {
   height: 85vh;
   border-radius: 7px;
 }
+.Modal {
+  z-index: 5000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(31, 28, 28);
+  height: 100%;
+  width: 100%;
+}
+
 h1 {
   color: rgb(15, 15, 15);
 }
 .text-center {
-  width
-  
+  border-radius: 4.5px;
+  /* background-color: rgb(12, 236, 109); */
+
+/* width: 80%;
+  height: 10%;
+  font-size: 2rem;
 } */

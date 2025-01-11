@@ -1,20 +1,18 @@
 import TodoHeader from "./TodoPage/TodoHeader";
 import TaskBar from "./TodoPage/TaskBar";
-import AllTodo from "./TodoPage/AllTodo";
-import DataBar from "./TodoPage/DataBar";
+import TabBar from "./TodoPage/TabBar";
 import CompletedBar from "./TodoPage/CompletedBar";
 import { useState } from "react";
 // import ModalComp from "../ui/ModalComp";
 // ----------------------------Parent Component---------------------
 const TodoHome = () => {
-  const [todosFilter, setTodosFilter] = useState("all-todos"); //initialy null
+  const [todosFilter, setTodosFilter] = useState("todos"); //initialy null
   console.log("todosFilter", todosFilter);
   return (
     <div>
       <TodoHeader></TodoHeader>
-      <AllTodo setTodosFilter={setTodosFilter}></AllTodo>
-      <TaskBar></TaskBar>
-      <DataBar></DataBar>
+      <TabBar setTodosFilter={setTodosFilter}></TabBar>
+      <TaskBar todosFilter={todosFilter}></TaskBar>
       <CompletedBar></CompletedBar>
     </div>
   );

@@ -25,7 +25,7 @@ const SignIn = () => {
     try {
       const data = { email, password };
       const response = await axios.post(
-        "https://staging-be-ecom.techserve4u.com/api/user/signIn",
+        "https://staging-be-ecom.techserve4u.com/api/user/signin",
         data
       );
 

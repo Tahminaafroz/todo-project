@@ -1,4 +1,4 @@
-import "../../../Styles/Pages/TodoPage.scss/TodoHeader.scss";
+import "../../../Styles/Pages/TodoPage/TodoHeader.scss";
 
 const TodoHeader = () => {
   return (

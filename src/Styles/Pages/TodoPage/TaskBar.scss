@@ -1,38 +1,130 @@
 .task-container {
-  height: auto;
-
-  margin-top: 10px;
+  width: 70%;
+  margin: 0 auto;
 }
 .task-box {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-.task-btn {
-  margin-top: 20px;
-  width: 8%;
-  height: 4vh;
-  background-color: blue;
-  color: white;
+  margin-bottom: 30px;
 }
 
-// .text-center {
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-.todoName {
-  width: 80%;
-  padding: 8px;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-  border: 1px solid;
-  border-radius: 5px;
-  outline: none;
+.data-container {
+  /* background-color: aqua; */
+  height: 60vh;
+  margin: 0 auto;
+  border-style: groove;
+  border-radius: 10px;
+  position: relative;
 }
-.date-picker {
-  width: 2px;
+
+// ----------------------------------------design for modal---------------------------------------
+
+.modal-box {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  top: 30%;
+  left: 40%;
+  width: 450px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    margin-bottom: 15px;
+    .modal-title {
+      font-size: 25px;
+      margin: 0;
+    }
+
+    .close-button {
+      background: none;
+      border: none;
+      font-size: 25px;
+      cursor: pointer;
+      color: #1a1919;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  // --------------------------------------modal body--------------------------------------
+  .modal-body {
+    .form-group {
+      margin-bottom: 15px;
+
+      label {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .icon {
+          margin-right: 5px;
+        }
+      }
+
+      input,
+      .react-datepicker-wrapper,
+      .react-time-picker {
+        width: 90%;
+        margin: 0 auto;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+
+    .form-actions {
+      text-align: center;
+
+      .add-button {
+        background-color: #1133f3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}
+// --------------------------------------------------------------
+
+// Style the button
+.add-task-btn {
+  background-color: #4caf50; // Green background
+  color: #fff; // White text
+  border: none; // Remove default border
+  padding: 10px 20px; // Add padding for a better look
+  border-radius: 5px; // Rounded corners
+  font-size: 16px; // Adjust font size
+  cursor: pointer; // Pointer cursor on hover
+  transition: background-color 0.3s ease; // Smooth transition effect
+}
+.data-img {
+  margin: auto;
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
 }

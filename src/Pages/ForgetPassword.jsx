@@ -6,11 +6,13 @@ import axios from "axios";
 import { useState } from "react";
 
 const ForgetPassword = () => {
+  // ----------------------------------what-type-of-data---------------------------
   const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
 
   const [isOtpSend, setIsOtpSend] = useState(false);
-
+  // ------------------------------------howto-handle-and-get-data--------------------
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -20,7 +22,7 @@ const ForgetPassword = () => {
         data
       );
       console.log(response);
-
+      // -------------------------------------how-to-apply-data-------------------------
       if (response?.data?.isOtpSend) {
         alert("Send OTP successfully on your email !");
         setIsOtpSend(true);
@@ -30,6 +32,7 @@ const ForgetPassword = () => {
       console.log("Error", error);
     }
   };
+  // -----------------------------how-UI-look-----------------------------------
   return (
     <div className="forgetpass-container">
       <div className="forgetpass-box">

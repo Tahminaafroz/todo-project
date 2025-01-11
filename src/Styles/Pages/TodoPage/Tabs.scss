@@ -1,0 +1,22 @@
+.container {
+  // parent data-container
+  /* background-color: aqua; */
+  height: 60vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: groove;
+  border-radius: 10px;
+  position: relative;
+}
+// -----------------------------------------------------
+.table-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.data-box {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

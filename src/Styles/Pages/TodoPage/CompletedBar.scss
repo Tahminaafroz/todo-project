@@ -1,0 +1,16 @@
+.completed-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.completed-box {
+  height: 50vh;
+  margin-bottom: 20px;
+  border-style: groove;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.page-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
